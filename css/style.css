@@ -56,12 +56,12 @@
     
     .hero-content h1 {
         color: white;
-        font-size: 3.5rem;
+        font-size: 2.5rem;
         letter-spacing: 0.02rem;
         width: 100%;
         text-align: center;
         margin-bottom: 50px;
-        text-shadow: -4px -4px 0 var(--primary), 4px 4px 0 var(--primary), 4px -4px 0 var(--primary), -4px 4px 0 var(--primary);
+        text-shadow: -4px -4px 4px var(--primary), 4px 4px 4px var(--primary), 4px -4px 4px var(--primary), -4px 4px 4px var(--primary);
     }
 
     .hero-content h3 {
@@ -109,7 +109,7 @@
 
     .hero-content h1 {
         text-shadow: -4px -4px 1px var(--primary), 4px 4px 1px var(--primary), 4px -4px 1px var(--primary), -4px 4px 1px var(--primary);
-        font-size: 6rem;
+        font-size: 5rem;
         margin-bottom: 75px;
     }
 
@@ -128,7 +128,7 @@
     }
 
     .hero-content h1 {
-        font-size: 7rem;
+        font-size: 8rem;
         letter-spacing: 0.05em;
     }
 

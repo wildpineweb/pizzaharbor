@@ -1,0 +1,351 @@
+
+
+/*-- -------------------------- -->
+<---          Landing           -->
+<--- -------------------------- -*/
+
+@media only screen and (min-width: 0px) {
+
+    #hero {
+        height: auto;
+        max-height: 600px;
+        background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("/images/taco-pizza-bg.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        position: relative;
+        padding-top: 50px;
+        padding-bottom: 150px;
+    }
+    
+    .hero-content {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+
+    .hero-content {
+        max-width: 400px;
+        margin: auto;
+    }
+    
+    .hero-content h1 {
+        color: white;
+        font-size: 3.5rem;
+        letter-spacing: 0.02rem;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+        text-shadow: -4px -4px 4px var(--primary), 4px 4px 4px var(--primary), 4px -4px 4px var(--primary), -4px 4px 4px var(--primary);
+    }
+
+    .hero-content h3 {
+        color: white;
+        text-align: center;
+        font-weight: 900;
+        margin-bottom: 50px;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, 1px 1px 0 #000, -1px 1px 0 #000;
+        line-height: 2rem;
+    }
+
+    .hero-content div {
+        max-width: 270px;
+        margin: auto;
+    }
+
+}
+
+/* Landscape */
+@media only screen and (min-width: 568px) {
+
+    #hero {
+        padding-top: 125px;
+    }
+
+    .hero-content {
+        max-width: 500px;
+    }
+
+    .hero-content h1 {
+        text-shadow: -4px -4px 1px var(--primary), 4px 4px 1px var(--primary), 4px -4px 1px var(--primary), -4px 4px 1px var(--primary);
+        font-size: 6rem;
+        margin-bottom: 75px;
+    }
+
+    .hero-content h3 {
+        text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, 2px 2px 0 #000, -2px 2px 0 #000;
+        font-size: 1.5rem;
+    }
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+
+    .hero-content {
+        max-width: 600px;
+    }
+
+    .hero-content h1 {
+        font-size: 6rem;
+        text-shadow: -3px -3px 2px var(--primary), 3px 3px 2px var(--primary), 3px -3px 2px var(--primary), -3px 3px 2px var(--primary);
+        letter-spacing: 0.05em;
+    }
+
+}
+
+/* Laptop */
+@media only screen and (min-width: 1024px) {
+
+    #hero .container {
+        max-width: 1200px;
+    }
+
+    #hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("/images/taco-pizza-bg.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .hero-content div {
+        max-width: 1000px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+
+    .hero-content h1 {
+        margin-top: 150px;
+    }
+
+}
+
+/* Desktop */
+@media only screen and (min-width: 1300px) {
+    
+    #hero .container {
+        max-width: 1400px;
+    }
+
+    .hero-content h1 {
+        font-size: 7rem;
+        margin-top: 225px;
+        margin-bottom: 100px;
+    }
+
+}
+
+
+/*-- -------------------------- -->
+<---            Menu            -->
+<--- -------------------------- -*/
+
+@media only screen and (min-width: 0px) {
+
+    #menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        position: relative;
+        padding-top: 50px;
+        padding-bottom: 150px;
+    }
+    #menu::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: url("/images/menu-bg.jpg");
+        background-size: cover;
+        opacity: 0.5;
+        z-index: -1;
+    }
+
+    .menu-header {
+        margin: 50px 0;
+        max-width: 560px;
+    }
+
+    .menu-header p:first-child {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .sizes {
+        text-align: left;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-wrap: wrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+    }
+
+    .servings {
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .servings label {
+        margin-bottom: 15px;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        display: block;
+        font-weight: bold;
+    }
+
+    .servings label span {
+        display: block;
+        line-height: 0.9rem;
+        font-weight: bold;
+    }
+
+    .servings > span {
+        line-height: 0.9rem;
+        font-size: 0.9rem;
+        display: block;
+    }
+
+    .servings > span span {
+        display: block;
+    }
+
+    .sizes div:last-child > span:last-child {
+        font-style: italic;
+    }
+
+    .menu-section {
+        max-width: 560px;
+    }
+
+    .menu-item {
+        text-align: left;
+        margin-bottom: 50px;
+    }
+
+    #menu h2 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .menu-item h3 {
+        color: var(--primary);
+        font-size: 1.25rem;
+    }
+
+    .menu-item p {
+        margin-bottom: 30px;
+    }
+
+    .menu-item .servings span {
+        font-size: 0.9rem;
+    }
+
+    .prices {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-wrap: wrap;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
+    }
+
+    .prices:last-child label {
+        font-size: 0.9rem;
+    }
+
+    .menu-item img {
+        border-radius: 5px;
+        height: 250px;
+        width: 300px;
+    }
+
+}
+
+@media only screen and (min-width: 450px) {
+
+    .prices {
+        flex-wrap: nowrap;
+    }
+
+}
+
+/* Landscape */
+@media only screen and (min-width: 568px) {
+
+
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+
+
+
+}
