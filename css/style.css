@@ -8,7 +8,7 @@
 
     #hero {
         height: auto;
-        background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("/images/hero-bg-2.jpg");
+        background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("/images/hero-bg-1024.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -128,7 +128,7 @@
     }
 
     .hero-content h1 {
-        font-size: 8rem;
+        font-size: 6rem;
         letter-spacing: 0.05em;
     }
 
@@ -143,7 +143,7 @@
 
     #hero {
         min-height: 100vh;
-        background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("/images/hero-bg-2.jpg");
+        background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("/images/hero-bg-1920.jpg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -185,7 +185,7 @@
     }
 
     .hero-content h1 {
-        font-size: 8rem;
+        font-size: 6rem;
         margin-bottom: 100px;
     }
     
@@ -203,7 +203,7 @@
     }
 
     .hero-content h1 {
-        font-size: 9rem;
+        font-size: 7rem;
     }
 
 }
@@ -216,7 +216,7 @@
     }
 
     .hero-content h3 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .hero-content .button-solid, .button-transparent {
@@ -232,7 +232,7 @@
 
     .hero-content h1 {
         margin-bottom: 150px;
-        font-size: 10rem;
+        font-size: 8rem;
     }
     
     .hero-content h3 {
@@ -465,7 +465,7 @@
     }
 
     #locals-choice h2 span:last-child {
-        max-width: 400px;
+        max-width: 475px;
     }
     #locals-choice h2 span:last-child::after {
         bottom: -40px;
@@ -494,7 +494,7 @@
     #mission {
         position: relative;
         height: auto;
-        background: url("/images/(remember to credit) watercolor_with_blue_detailed_background.jpg");
+        background: url("/images/our-mission-bg-1024.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -566,7 +566,7 @@
         margin: 50px auto 200px;
         width: 270px;
         padding: 10px 20px;
-        font-size: 1.4rem;
+        font-size: 1.25rem;
         background-color: var(--secondary);
         font-weight: 900;
         text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, 1px 1px 0 #000, -1px 1px 0 #000;
@@ -635,6 +635,11 @@
 /* Laptop */
 @media only screen and (min-width: 1024px) {
 
+    #mission {
+        background: url("/images/our-mission-bg-1920.jpg");
+        background-size: cover;
+    }
+
     #mission div {
         max-width: 1100px;
         -webkit-box-orient: horizontal;
@@ -701,6 +706,22 @@
 
 } 
 
+@media only screen and (min-width: 1600px) {
+
+    #mission {
+        padding: 200px 10px;
+    }
+
+    #mission::before {
+        height: 300px;
+    }
+
+    #mission::after {
+        height: 300px;
+    }
+
+}
+
 
 /*-- -------------------------- -->
 <---           Pizzas           -->
@@ -757,7 +778,7 @@
         margin: 100px auto 150px;
         width: 270px;
         padding: 10px 20px;
-        font-size: 1.4rem;
+        font-size: 1rem;
         background-color: var(--primary);
         font-weight: 900;
         text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, 1px 1px 0 #000, -1px 1px 0 #000;
@@ -787,9 +808,9 @@
         height: 200px;
         bottom: -65px;
         z-index: -1;
-        -webkit-transition: 1s ease;
-        -o-transition: 1s ease;
-        transition: 1s ease;
+        -webkit-transition: 1.5s ease;
+        -o-transition: 1.5s ease;
+        transition: 1.5s ease;
     }
     #pizzas .button-solid:hover::after {
         transform: rotate(-720deg);
@@ -809,7 +830,7 @@
 @media only screen and (min-width: 768px) {
 
     #pizzas h2 {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
 }
