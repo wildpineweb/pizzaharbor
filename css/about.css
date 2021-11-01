@@ -8,7 +8,7 @@
 
     #hero {
         height: 400px;
-        background: url("/images/restaurant-front-1024.jpg");
+        background: url("/images/lobby.jpg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -19,13 +19,13 @@
 /* Laptop */
 @media only screen and (min-width: 1024px) {
 
-    #hero {
+    /* #hero {
         height: 600px;
         background: url("/images/restaurant-front-1920.jpg");
         background-position: 0 80%;
         background-size: cover;
         background-attachment: fixed;
-    }
+    } */
 
 }
 
@@ -41,7 +41,7 @@
         z-index: 1;
     }
 
-    #about .container {
+    .about-desc {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -78,7 +78,7 @@
         margin: 25px auto;
     }
 
-    #about .container div {
+    .about-desc div {
         text-align: center;
     }
 
@@ -93,10 +93,14 @@
         font-size: 1.5rem;
     }
 
-    #about img {
+    .about-desc img {
         width: 100%;
         max-width: 500px;
         height: auto;
+    }
+
+    .about-desc div a {
+        font-size: 0.8rem;
     }
 
 }
@@ -108,11 +112,15 @@
         height: 500px;
     }
 
+    .about-desc div a {
+        font-size: 1rem;
+    }
+
 }
 
 @media only screen and (min-width: 1024px) {
 
-    #about .container {
+    .about-desc {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
@@ -136,17 +144,85 @@
         margin: 75px 0;
     }
 
-    #about .container div:first-child {
+    .about-desc div:first-of-type {
         width: 40%;
     }
 
-    #about .container div:last-child {
+    .about-desc div:last-of-type {
         width: 40%;
     }
 
-    #about img {
+    .about-desc img {
         max-width: 800px;
     }
 
+}
+
+/*-- -------------------------- -->
+<---            Slider          -->
+<--- -------------------------- -*/
+
+@media only screen and (min-width: 0px) {
+
+    .slider {
+        width: 300px;
+        margin: 50px auto 20px !important;
+        text-align: center;
+    }
+    
+    .slider .photos {
+        position: relative;
+        height: 500px;
+    }
+    
+    .photos img {
+        width: 300px;
+        height: 500px;
+        position: absolute;
+        left: 0;
+        opacity: 0;
+        transition: opacity 1s;
+    }
+    
+    .slider .photos img.shown {
+        opacity: 1;
+    }
+    
+    .prev::before,
+    .next::before {
+      color: #fff;
+      font-size: 100px;
+      position: absolute;
+      top: 35%;
+      cursor: pointer;
+    }
+    
+    .prev::before {
+      content: '<';
+      left: 0;
+    }
+    
+    .next::before {
+      content: '>';
+      right: 0;
+    }
+
+}
+
+@media only screen and (min-width: 750px) {
+
+    .slider {
+        width: 400px;
+    }
+    
+    .slider .photos {
+        position: relative;
+        height: 666px;
+    }
+    
+    .photos img {
+        width: 400px;
+        height: 666px;
+    }
 
 }

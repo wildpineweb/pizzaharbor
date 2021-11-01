@@ -9,7 +9,7 @@
         #hero {
             height: auto;
             max-height: 600px;
-            background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("/images/pizza-party-1024.jpg");
+            background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("/images/seaside-beach.gif");
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -125,14 +125,6 @@
 
     #hero .container {
         max-width: 1200px;
-    }
-
-    #hero {
-        background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("/images/pizza-party-1920.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
     }
 
     .hero-content div {
